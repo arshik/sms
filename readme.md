@@ -5,10 +5,10 @@
 
 > cd sms
 
-> python -m venv .smsenv (but I wasn't used **python, used **py)
+> python -m venv .smsenv (but I wasn't used **python**, used **py**)
 
 > code . (to open in vscode shortcut)
 
-> source .smsenv/Scripts/activate (but I used ** ].smsenv/Script/activate)
+> source .smsenv/Scripts/activate (but I used **.smsenv/Script/activate**)
 
 > pip install django
