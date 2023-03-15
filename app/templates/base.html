@@ -19,6 +19,9 @@
 
     <!-- favicon -->
     <link href={% static "img/favicon.ico" %} rel="shortcut icon" />
+
+    <!-- Static CSS-->
+    <link href={% static "css/style.css" %} rel="stylesheet"/>
     
 
     <!--Logo-->
@@ -27,23 +30,29 @@
   </head>
 
   <body>
+    <div class="wrapper">
     <header>
       <!-- navbar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="col-sm">
-          <a href="#" class="navbar-brand flex-grow-1 text-center text-light" style="margin-left: 25px;">
+          <a href="#" class="navbar-brand flex-grow-1 text-center text-light" style="margin-left: 30px;">
             <i class="fa-solid fa-graduation-cap"></i>&nbsp;&nbsp;Logo
           </a>
         </div>
         <!--Button Right Side-->
         <div class="col-sm">
-          <a href="#" class="btn btn-outline-success btn-sm text-light">
+          <a href="#" class="btn btn-outline-success btn-sm text-light" id="btn-nav">
             Login
           </a>
         </div>
       </nav>
     </header>
-    <main></main>
+
+    <!-- block content ROOT-->
+    {% block content %}
+    
+    {% endblock content %}
+    </div>
     <footer class="bg-dark text-center text-lg-start text-light" id="footer">
       <!-- place footer here -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
