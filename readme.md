@@ -15,6 +15,7 @@
 
 ### Notes
 * Some time I want to used html comment in VSCode like <!-- --> this when I press ctrl+/ but VSCode was prompted {% comment %}  {% endcomment %}, So I change custom user snippet as following: *
+
 If you don't want to disable/uninstall any plugin, you can create a snippet to put a comment. For example, I create a snippet that add HTML comments:
 
     "comment HTML": {
