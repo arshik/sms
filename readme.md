@@ -30,3 +30,7 @@ Then, when you start typing 'chtml' in that kind of files, IntelliSense will pro
 Maybe this is a workarround, but it works excellent for me. Hope it helps!
 
 https://code.visualstudio.com/docs/customization/userdefinedsnippets
+
+
+* If you want to update requirements.txt in windows command
+> pip freeze > requirements.txt

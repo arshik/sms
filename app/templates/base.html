@@ -36,14 +36,18 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="col-sm">
           <a href="#" class="navbar-brand flex-grow-1 text-center text-light" style="margin-left: 30px;">
-            <i class="fa-solid fa-graduation-cap"></i>&nbsp;&nbsp;Logo
+            {% block left_menu %}
+              <i class="fa-solid fa-graduation-cap"></i>&nbsp;&nbsp;Logo
+            {% endblock left_menu %}            
           </a>
         </div>
         <!--Button Right Side-->
         <div class="col-sm">
+          {% block log %}
           <a href="#" class="btn btn-outline-success btn-sm text-light" id="btn-nav">
             Login
           </a>
+          {% endblock log %}
         </div>
       </nav>
     </header>

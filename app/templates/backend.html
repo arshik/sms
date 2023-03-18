@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+<!-- this is webpage title content -->
+{% block title %}
+  Backend
+{% endblock %}
+
+<!-- This is log in/out content -->
+{% block log %}
+  <a href="#" class="btn btn-outline-danger btn-sm text-light" id="btn-nav">Logout</a>
+{% endblock %}
+
+<!-- this is for left side menu chages as account icon and text -->
+{% block left_menu %}
+  <i class="fa-solid fa-unlock-keyhole"></i>&nbsp;&nbsp;School Admin
+{% endblock %}
+<!-- This is body content -->
+{% block content %}
+  <h1 class="text-danger text-center text-header">Backend</h1>
+{% endblock %}

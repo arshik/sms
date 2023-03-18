@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+<!-- title content -->
+{% block title %}
+  Login
+{% endblock %}
+
+<!-- this is boyd of content -->
+{% block content %}
+<div class="container card p-3 border-dark mt-5 " style="width"30%>
+    <div class="text-center">RESTRICTED ACCESS</div>
+    <hr>
+    <!-- form -->
+    <form method="post" autocomplete="off" novalidate>
+        {% csrf_token %}
+        {{form|crispy}}
+        <br>
+        <button type="submit" class="w-100 btn btn-success">Log In</button>
+    </form>
+</div>
+{% endblock %}
