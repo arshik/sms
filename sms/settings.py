@@ -133,3 +133,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 #Login/Logout setting
 LOGIN_REDIRECT_URL='backend'
+LOGOUT_REDIRECT_URL='frontend'

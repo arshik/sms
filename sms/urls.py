@@ -6,5 +6,7 @@ from app import views
 urlpatterns = [
     path("admin/", admin.site.urls), #admin url
     path("", views.frontend, name='frontend'), 
-       path("backend/", views.backend, name='backend'), 
+    path("backend/", views.backend, name='backend'), 
+    # Login / Logout
+    path("login/", include('django.contrib.auth.urls')), 
 ]

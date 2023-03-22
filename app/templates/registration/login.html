@@ -5,17 +5,31 @@
   Login
 {% endblock %}
 
+<!-- This is log in/out content -->
+{% block log %}
+  <a href={% url 'frontend'  %} class="btn btn-outline-secondary btn-sm text-light" id="btn-nav">Go Back</a>
+{% endblock %}
+
+
+<!-- this is for left side menu chages as account icon and text -->
+{% block left_menu %}
+  <i class="fas fa-key"></i>&nbsp;&nbsp;Login
+{% endblock %}
 <!-- this is boyd of content -->
 {% block content %}
-<div class="container card p-3 border-dark mt-5 " style="width"30%>
+  <div class="container card p-3 border-dark mt-5" style="width:30%">
     <div class="text-center">RESTRICTED ACCESS</div>
-    <hr>
+    <hr />
     <!-- form -->
     <form method="post" autocomplete="off" novalidate>
-        {% csrf_token %}
-        {{form|crispy}}
-        <br>
-        <button type="submit" class="w-100 btn btn-success">Log In</button>
+      {% csrf_token %}
+      {{ form|crispy }}
+      <br />
+      <button type="submit" class="w-100 btn btn-secondary text-bg-secondary">Log In</button>
     </form>
-</div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  style="color: #d3d3d3;"
 {% endblock %}

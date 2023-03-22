@@ -44,7 +44,7 @@
         <!--Button Right Side-->
         <div class="col-sm">
           {% block log %}
-          <a href="#" class="btn btn-outline-success btn-sm text-light" id="btn-nav">
+          <a href={% url 'backend'  %} class="btn btn-outline-success btn-sm text-light" id="btn-nav">
             Login
           </a>
           {% endblock log %}
@@ -57,15 +57,16 @@
     
     {% endblock content %}
     </div>
-    <footer class="bg-dark text-center text-lg-start text-light" id="footer">
-      <!-- place footer here -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        &copy;{% now "Y" %} Copyright:
-        <a class="text-light" href="#" style="text-decoration: none;">
-          <span style="color: greenyellow;">www.yoursite.com</span>
-        </a>
-      </div>
-    </footer>
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-lg-start text-light" id="footer">
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              &copy; {% now "Y" %} Copyright:
+              <a class="text-light" href="#" style="text-decoration: none;">
+                  <span {% block footer %} style="color: greenyellow;" {% endblock %}>www.your-website.com</span>
+              </a>
+          </div>
+      </footer>
+  
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
